@@ -4,12 +4,12 @@ const getAll = () => {
   return db('cars')
 }
 
-const getById = () => {
-  // return db('cars').where()
+const getById = (id) => {
+  return db('cars').where('id', id).first()
 }
 
 const create = () => {
-  
+  // return db('cars')
 }
 
 
